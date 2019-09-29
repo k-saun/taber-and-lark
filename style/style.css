@@ -9,7 +9,7 @@
   list-style: none;
   display: inline-block;
   float: left;
-  margin: auto;
+  /*margin: auto;*/
   padding: 0;
   width: 33%;
 }
@@ -32,11 +32,12 @@
 
 .image-container {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .burger-bar {
   width: 5%;
-  height: 0.5%;
+  height: 1%;
   background-color: #333;
   margin: 6px 0;
 }
