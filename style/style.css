@@ -2,7 +2,7 @@
 	margin-left: 2%;
   height: 10%;
 	list-style: none;
-	padding: 10%;
+	padding: 0;
   margin: 0;
 }
 
@@ -11,7 +11,7 @@
   display: inline-block;
   float: left;
   /*margin: auto;*/
-  padding: 0;
+  padding: 10% 0 10% 0;
   width: 33%;
 }
 
@@ -20,6 +20,8 @@
   align-items: center;
   justify-content: center;
   margin-top: 50%
+  height 10%
+  width 10%
 }
 
 .main{
