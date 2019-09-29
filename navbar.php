@@ -8,8 +8,10 @@
 	</li>
 	<li>
 		<div class="image-container">
-		  <img src="/images/temp-sprite.png">
+		  <a href="index.php">
+		    <img src="/images/temp-sprite.png" alt="logo">
+		  </a>	
 		</div>
 	</li>
-	<li></li>
+	<li>cart logo here</li>
 </ul>
