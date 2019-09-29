@@ -6,6 +6,8 @@
   		<div class="burger-bar"></div>
 	  </div>
 	</li>
-	<li></li>
+	<li>
+		<img src="/images/temp-sprite.png">
+	</li>
 	<li></li>
 </ul>
