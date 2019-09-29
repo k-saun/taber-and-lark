@@ -36,8 +36,20 @@ body {
   width: 100%;
 }
 
-.navbar-item {
-	padding: 10% 0 10% 0;
+.item-row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.item-column{
+  display: flex;
+  padding: 0 4px;
+}
+
+.item-column img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 .image-container {
@@ -45,8 +57,8 @@ body {
   justify-content: center;
 }
 .burger-bar {
-  width: 7%;
-  height: 8%;
+  width: 5%;
+  height: 10%;
   background-color: #333;
   margin: 7px 0;
 }
