@@ -1,6 +1,6 @@
 #navbar {
 	margin-left: 2%;
-  height: 40px;
+  height: 10%;
 	list-style: none;
 	padding: 0;
   margin-bottom: 0;
@@ -26,8 +26,7 @@
 .main{
   display: flex;
   position: absolute;
-  /*top: 40px;
-  bottom: 20px;  Footer Height */
+  height: 90%;
   width: 100%;
 }
 
