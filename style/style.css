@@ -4,21 +4,24 @@
 	padding: 0px;
 }
 
-#navbar li{
+#navbar li { 
   list-style: none;
   display: inline-block;
   float: left;
-  margin: 0 auto;
+  margin: auto;
   padding: 0;
   width: 33%;
 }
 
-.burger{
-	display: inline-block;
+.burger {
 	cursor: pointer;
 }
 
-.burger-bar{
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.burger-bar {
   width: 35px;
   height: 5px;
   background-color: #333;

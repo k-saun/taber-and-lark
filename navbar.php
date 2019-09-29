@@ -7,7 +7,9 @@
 	  </div>
 	</li>
 	<li>
-		<img src="/images/temp-sprite.png">
+		<div class="image-container">
+		  <img src="/images/temp-sprite.png">
+		</div>
 	</li>
 	<li></li>
 </ul>
