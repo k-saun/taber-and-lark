@@ -2,9 +2,8 @@
 	margin-left: 2%;
   height: 10%;
 	list-style: none;
-	padding: 0;
-  margin-bottom: 0;
-  margin-top: 5%;
+	padding: 10%;
+  margin: 0;
 }
 
 #navbar li { 
@@ -39,8 +38,8 @@
   justify-content: center;
 }
 .burger-bar {
-  width: 15%;
-  height: 10%;
+  width: 7%;
+  height: 8%;
   background-color: #333;
   margin: 7px 0;
 }
