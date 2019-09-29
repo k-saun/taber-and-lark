@@ -7,10 +7,10 @@
 #navbar li{
   list-style: none;
   display: inline-block;
-  border-left: 1px;
   float: left;
   margin: 0 auto;
   padding: 0;
+  width: 33%;
 }
 
 .burger{
