@@ -5,8 +5,9 @@
 }
 
 #navbar li{
-  list-style-type: none;
-  border-left: 1px solid #999;
+  list-style: none;
+  display: inline-block;
+  border-left: 1px;
   float: left;
   margin: 0 10;
   padding: 0;
