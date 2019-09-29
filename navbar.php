@@ -1,6 +1,6 @@
 <ul id="navbar">
 	<li>
-	  <div  class="burger">
+	  <div>
   		<div class="burger-bar"></div>
   		<div class="burger-bar"></div>
   		<div class="burger-bar"></div>
