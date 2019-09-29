@@ -3,6 +3,7 @@
 	list-style: none;
 	padding: 0px;
   height: 40px;
+  bottom: 0;
 }
 
 #navbar li { 
@@ -16,8 +17,9 @@
 
 #enter {
   display: flex;
+  align-items: center;
   justify-content: center;
-  top:50%;
+  margin-top: 50%
 }
 
 .main{
@@ -37,7 +39,7 @@
   justify-content: center;
 }
 .burger-bar {
-  width: 33%;
+  width: 15%;
   height: 10%;
   background-color: #333;
   margin: 10px 0;
