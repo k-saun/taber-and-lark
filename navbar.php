@@ -13,5 +13,5 @@
 		  </a>	
 		</div>
 	</li>
-	<li>cart logo here</li>
+	<li text-align="right">cart logo here</li>
 </ul>
