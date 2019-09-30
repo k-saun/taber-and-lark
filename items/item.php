@@ -5,7 +5,6 @@
   </head>
     <body>
 		  <?php include_once("item.php") ?>
-
   		<div class="main">
         <div id="item-image-and-checkout">
           <div class="center-container">
