@@ -39,6 +39,7 @@ body {
 
 .item-row{
   display: flex;
+  flex-wrap: wrap;
   padding: 4px;
 }
 
