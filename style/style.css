@@ -53,12 +53,13 @@ body {
   align-items: center;
   flex-wrap: wrap;
   flex: 50%;
-  max-width: 25%;
+  max-width: 50%;
   padding: 0;
 }
 
 .item-column img {
   margin-top: 8px;
+  width: 100%;
 }
 
 .image-container {
