@@ -7,13 +7,14 @@
 		  <?php include_once("navbar.php") ?>
   		<div class="main">
         <div id="item-image-and-checkout">
-          <span class="center-container">
+          <div class="center-container">
+            <img src="/images/jewlery.png">
+          </div>
+          <div class="center-container">
             <p>Generic Item Name</p>
             <p>$1234</p>
-          </span>
-          <span class="center-container">
-            <img src="/images/jewlery.png">
-          </span>
+          </div>
+          
         </div>
       </div>
 	</body>
