@@ -11,8 +11,9 @@ body {
 
 .navbar-section { 
   display:flex;
+  flex-direction: column;
+  justify-content: center;
   cursor: pointer;
-  float: left;
   margin: 0;
   width: 33%;
   height: 100%;
@@ -80,6 +81,7 @@ body {
 .center-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #item-pic {
