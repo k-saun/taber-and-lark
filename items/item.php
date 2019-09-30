@@ -12,7 +12,7 @@
             <p>$1234</p>
           </span>
           <span class="center-container">
-            <img src="images/jewlery.png">
+            <img src="/images/jewlery.png">
           </span>
         </div>
       </div>
