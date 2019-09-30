@@ -39,12 +39,13 @@ body {
 
 .item-row{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 4px;
 }
 
 .item-column{
-  display: flex;
+  display: inline-flex;
   padding: 4px;
 }
 
