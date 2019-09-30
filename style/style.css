@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 
-#navbar div { 
+.navbar-section { 
   display:flex;
   cursor: pointer;
   float: left;
