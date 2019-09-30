@@ -23,12 +23,18 @@
   width 10%
 }
 
+#item-image-and-checkout {
+  width: 100%;
+  height: 50%;
+  display: inline-block;
+  float: right;
+}
+
 body {
   margin: 0;
 }
 
 .main{
-  
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -54,21 +60,22 @@ body {
   flex-wrap: wrap;
   flex: 50%;
   max-width: 50%;
-  padding: 0;
+  padding: 4px;
 }
 
 .item-column img {
-  margin-top: 8px;
+  margin-top: 4px;
   width: 100%;
 }
 
-.image-container {
+.center-container {
   display: flex;
   justify-content: center;
 }
+
 .burger-bar {
   width: 5%;
   height: 10%;
   background-color: #333;
-  margin: 7px 0;
+  margin: 5%;
 }

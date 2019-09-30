@@ -7,11 +7,13 @@
 	  </div>
 	</li>
 	<li>
-		<div class="image-container">
+		<div class="center-container">
 		  <a href="index.php">
 		    <img src="/images/temp-sprite.png" alt="logo">
 		  </a>	
 		</div>
 	</li>
-	<li text-align="right">cart logo here</li>
+	<li> 
+		<div style="text-align: right">cart logo here</div>
+	</li>
 </ul>

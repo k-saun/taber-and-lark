@@ -1,14 +1,30 @@
 	<div class="item-row">
 		<div class="item-column">
-			<img src="/images/jewlery.png">
-			<img src="/images/jewlery.png">
-			<img src="/images/jewlery.png">
-			<img src="/images/jewlery.png">
+			<a href="/items/item.php">
+				<img src="/images/jewlery.png">
+			</a>
+			<a href="/items/item.php">
+				<img src="/images/jewlery.png">
+			</a>
+			<a href="/items/item.php">
+				<img src="/images/jewlery.png">
+			</a>
+			<a href="/items/item.php">
+				<img src="/images/jewlery.png">
+			</a>
 		</div>
 		<div class="item-column">
-			<img src="/images/jewlery.png">
-			<img src="/images/jewlery.png">
-			<img src="/images/jewlery.png">
-			<img src="/images/jewlery.png">
+			<a href="/items/item.php">
+				<img src="/images/jewlery.png">
+			</a>
+			<a href="/items/item.php">
+				<img src="/images/jewlery.png">
+			</a>
+			<a href="/items/item.php">
+				<img src="/images/jewlery.png">
+			</a>
+			<a href="/items/item.php">
+				<img src="/images/jewlery.png">
+			</a>
 		</div>
 	</div>
