@@ -45,6 +45,7 @@ body {
 }
 
 .item-column {
+  height: 100%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -55,8 +56,6 @@ body {
 
 .item-column img {
   margin-top: 8px;
-  width: 372px;
-  height: 372px;
   object-fit: cover;
 }
 
