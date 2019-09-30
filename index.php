@@ -11,7 +11,7 @@
 				// on button press, item grid will appear
     			<button type="button" >Enter Shop</button>
     		</div>
-    		<?php include_once("items.php")>
+    		<?php include_once("items.php")?>
     	</div>
 	</body>
 </html>
