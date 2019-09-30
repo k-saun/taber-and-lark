@@ -46,18 +46,18 @@ body {
 
 .item-column {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   flex: 50%;
   max-width: 50%;
-  padding: 0 4px;
+  padding: 0;
 }
 
 .item-column img {
   margin-top: 8px;
-  width: 200px;
-  height: 200px;
+  width: 372px;
+  height: 372px;
   object-fit: cover;
-
 }
 
 .image-container {
