@@ -4,7 +4,7 @@
 	 <link rel="stylesheet" type="text/css" href="/style/style.css">
   </head>
     <body>
-		  <?php include_once("../navbar.php") ?>
+		  <?php include_once("item.php") ?>
 
   		<div class="main">
         <div id="item-image-and-checkout">

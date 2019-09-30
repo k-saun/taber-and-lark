@@ -27,12 +27,19 @@
   display: flex;
   width: 100%;
   flex-direction: row;
+  margin: 5%
 }
 
 #item-image-and-checkout div {
   width: 50%;
   display: inline-block;
 }
+
+#item-image-and-checkout img {
+  width: 50%;
+}
+
+
 
 body {
   margin: 0;
