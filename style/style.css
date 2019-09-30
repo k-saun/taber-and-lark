@@ -1,8 +1,12 @@
+body {
+  margin: 0;
+}
+
 #navbar {
-  display:flex;
+  display: flex;
   flex-direction: row;
   height: 10%;
-  margin: 2%;
+  margin: 0;
 }
 
 #navbar div { 
@@ -11,6 +15,7 @@
   float: left;
   margin: 0;
   width: 33%;
+  height: 100%;
 }
 
 #enter {
@@ -33,12 +38,6 @@
 
 #item-image-and-checkout img {
   width: 50%;
-}
-
-
-
-body {
-  margin: 0;
 }
 
 .main{
