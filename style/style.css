@@ -61,7 +61,7 @@ body {
   flex-wrap: wrap;
   flex: 50%;
   max-width: 50%;
-  padding: 4px;
+  padding: 0;
 }
 
 .item-column img {
