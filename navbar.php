@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="navbar-section center-container">
-	  <a href="index.php">
+	  <a href="/index.php">
 	    <img src="/images/temp-sprite.png" alt="logo">
 	  </a>	
 	</div>
