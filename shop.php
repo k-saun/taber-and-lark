@@ -8,15 +8,9 @@
   <link rel="manifest" href="/images/favicon/site.webmanifest">
   </head>
     <body>
-
 		<?php include_once("navbar.php") ?>
 		<div class="main">
-			<div id="enter">
-          <a href="/shop.php">
-    			<button type="button" >Enter Shop</button>
-          </a>
-    		</div>
-    		<?php include_once("items.php")?>
-    	</div>
+    	<?php include_once("items.php")?>
+    </div>
 	</body>
 </html>

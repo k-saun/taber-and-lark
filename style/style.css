@@ -40,6 +40,8 @@ body {
 
 #item-image-and-checkout img {
   width: 50%;
+  background-color: #9E9E9E;
+  padding: 1.5%;
 }
 
 .main{
@@ -71,6 +73,7 @@ body {
   flex: 50%;
   margin-right: 0.5%;
   margin-left: 0.5%;
+  margin top: 0.5%;
   max-width: 48%;
   padding: 0;
 }
