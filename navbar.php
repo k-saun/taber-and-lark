@@ -1,17 +1,25 @@
-<div id="navbar">
-	<div class="navbar-section">
-  		<div class="burger-bar"></div>
-  		<div class="burger-bar"></div>
-  		<div class="burger-bar"></div>
-	</div>
+<div class="navbar">
+  <ul>
 
-	<div class="navbar-section center-container">
+	<li>
+
+  		<div class="burger-bar"></div>
+  		<div class="burger-bar"></div>
+  		<div class="burger-bar"></div>
+	</li>
+
+	<li class="center-container">
 	  <a href="/index.php">
 	    <img src="/images/temp-sprite.png" alt="logo">
 	  </a>	
-	</div>
-	
-	<div class="navbar-section"> 
-		<div style="text-align: right">cart logo here</div>
-	</div>
+	</li>
+
+	<li> 
+		<div id="nav-right">
+			<div class="icon" id="cart-icon"></div>
+			<div class="icon" id="account-icon"></div>
+		</div>
+	</li>
+
+  </ul>
 </div>
