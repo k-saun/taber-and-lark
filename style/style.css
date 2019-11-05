@@ -75,6 +75,12 @@ body {
   flex: 50%;
 }
 
+.item-column a {
+  width: 100%;
+  padding: 2.5% 2.5% 2.5 2.5%;
+  background-color: #9E9E9E;
+}
+
 .item-column img {
   width: 98%;
   margin: 1%;
