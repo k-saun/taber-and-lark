@@ -1,18 +1,10 @@
 <?php
-
-/*require_once 'KLogger.php';*/
-#mysql://b30b5dd36123b5:81564b86@us-cdbr-iron-east-05.cleardb.net/heroku_56685c622a54a69?reconnect=true
 class DAO {
 
   private $host = 'us-cdbr-iron-east-05.cleardb.net';
   private $dbname = 'heroku_56685c622a54a69';
   private $username = 'b30b5dd36123b5';
   private $password = '81564b86';
-  /*private $logger;
-
-  public function __construct() {
-    $this->logger = new KLogger ( "log.txt" , KLogger::DEBUG );
-  }*/
 
   public function getConnection() {
     try {
@@ -26,7 +18,7 @@ class DAO {
   public function getShopFront() {
     $conn = $this->getConnection();
     try {
-    return $conn->query("SELECT * FROM item WHERE item_shopfront=1", PDO::FETCH_ASSOC);
+    return $conn->query("SELECT * FROM items WHERE item_shopfront=1", PDO::FETCH_ASSOC);
     } catch(Exception $e) {
       echo print_r($e,1);
       exit;
