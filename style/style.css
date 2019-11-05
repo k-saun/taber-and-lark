@@ -5,7 +5,7 @@ body {
 
 .navbar {
   width: 100vw;
-  height: 8vh
+  height: 8%;
 }
 
 .navbar ul {
@@ -62,6 +62,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100vw;
+  height: 92%;
 }
 
 .item-row{
@@ -78,7 +79,6 @@ body {
 .item-column a {
   width: 100%;
   padding: 2.5% 2.5% 2.5 2.5%;
-  background-color: #9E9E9E;
 }
 
 .item-column img {

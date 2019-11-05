@@ -32,7 +32,10 @@
 
       <?php   
         if (isset($_SESSION['message'])) {
-          echo "<div>{$_SESSION['message']}</div>";
+          $msgs = $_SESSION['message'];
+          foreach($msgs as $msg){
+            echo "<div>{$msg}</div>";
+          }
           unset($_SESSION['message']);
         }
       ?>

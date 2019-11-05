@@ -25,11 +25,16 @@
 		          <div class="center-container"><input type="submit"/></div>
 		        </form>
       		</div>
+      		
       		<?php   
 		        if (isset($_SESSION['message'])) {
-		          echo "<div>{$_SESSION['message']}</div>";
-		          unset($_SESSION['message']);
+		        	$msgs = $_SESSION['message'];
+		        	foreach($msgs as $msg){
+		        		echo "<div>{$msg}</div>";
+		        	}
+		        	unset($_SESSION['message']);
 		        }
+
 	      	?>
     	</div>
 	</body>

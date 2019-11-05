@@ -25,11 +25,13 @@ class DAO {
     }
   }
 
-  public function getUser($user_email) {
+  public function getUser($email) {
+    $user_email = $this->sanitize($user_email);
+
     try {
       $conn = $this->getConnection();
       $stmt = $conn->prepare("SELECT * FROM users WHERE user_email = :email");
-      $stmt->bindParam(':email', $user_email);
+      $stmt->bindParam(':email', $email);
       $stmt->execute();
       $user = $stmt->fetch(PDO::FETCH_ASSOC);
       return $user;
@@ -41,6 +43,9 @@ class DAO {
   }
 
   public function createUser($email, $pass) {
+    $email = $this->sanitize($email);
+    $pass = $this->sanitize($pass); 
+
     try {
       $conn = $this->getConnection();
       $stmt = $conn->prepare("INSERT INTO users (`user_email`, `user_password`, `user_DOB`, `user_orders`) VALUES (?, ?,'', NULL)");
@@ -51,9 +56,16 @@ class DAO {
       exit;
     }
   }
-  public function getItem($id) {
-    
-  }
+
+function sanitize($data) {
+  $data = trim($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+public function getItem($id) {
+  
+}
   /*
   public function saveComment ($comment) {
     $this->logger->LogInfo("saving a comment [{$comment}]");
