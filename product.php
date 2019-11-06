@@ -5,7 +5,6 @@
   </head>
     <body>
 		  <?php include_once("../navbar.php") ?>
-      <?php include_once
   		<div class="main">
         <div id="item-image-and-checkout">
           <div class="center-container">

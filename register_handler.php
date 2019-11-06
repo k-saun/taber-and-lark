@@ -65,10 +65,12 @@ if(!empty($msgs)) {
 $result = $dao->createUser($email, $pass);
 if($result) {
 	array_push($msgs, "Success!");
+	$_SESSION['message'] = $msgs;
 	header("Location: /login.php");
 	exit;
 } else {
 	array_push($msgs, "Sorry! Something went wrong.");
+	$_SESSION['message'] = $msgs;
 	header("Location: /register.php");
 	exit;
 }

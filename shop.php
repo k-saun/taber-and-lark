@@ -1,6 +1,7 @@
 <html>
   <head>
   	<title>T&L</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="/style/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
@@ -18,8 +19,6 @@
         $num_rows = $items->rowCount();
         $item_html;
 
-        echo "<div class=\"item-row\"><div class=\"item-column\">";
-
         $i = 0;
         foreach($items as $item){
           $item_html[$i] = "<a href='product.php?item_id={$item['item_url']}''>" .
@@ -28,12 +27,14 @@
           $i++;
         }
 
+        echo "<div class=\"item-row\"><div class=\"item-column left\">";
+
         $i = 0;
         for($i; $i < ($num_rows/2); $i++){
           echo $item_html[$i];
         }
         echo "</div>";
-        echo "<div class=\"item-column\">";
+        echo "<div id=\"right\" class=\"item-column right\">";
 
         for($i; $i < $num_rows; $i++){
           echo $item_html[$i];

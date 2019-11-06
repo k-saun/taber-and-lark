@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #E0E0E0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
@@ -62,10 +63,9 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  height: 92%;
 }
 
-.item-row{
+.item-row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -73,17 +73,24 @@ body {
 }
 
 .item-column {
-  flex: 50%;
+  flex: 49%;
+}
+
+.item-column.left {
+  margin-right: 1%;
+}
+
+.item-column.right {
+  margin-left: 1%;
 }
 
 .item-column a {
   width: 100%;
-  padding: 2.5% 2.5% 2.5 2.5%;
 }
 
 .item-column img {
-  width: 98%;
-  margin: 1%;
+  width: 100%;
+  margin-top: 2.5%;
 }
 
 .center-container {
