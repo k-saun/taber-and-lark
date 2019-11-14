@@ -22,16 +22,15 @@
       
 		<div class="main">
 
-      <div>
-        <form method="post" action="/login_handler.php">
-          <div>Email</div>
-          <div><input type="text" name="email"/></div>
-          <div>Password</div>
-          <div><input type="password" name="pass"/></div>
-          <div class="center-container"><input type="submit"/></div>
-          <div class="center-container">
-            <a href="/register.php">Sign up!</a>
+      <div class="usr form">
+        <form class="no-margin" method="post" action="/login_handler.php">
+          <div class="split"><div>Email</div> <input type="text" name="email"/></div>
+          <div class="split"><div>Password</div><input type="password" name="pass"/></div>
+          <div class="split">
+            <div><a href="/register.php">Sign up!</a></div>
+            <input type="submit"/>
           </div>
+          
         </form>
       </div>
 

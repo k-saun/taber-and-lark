@@ -14,14 +14,14 @@
     <body>
 		<?php include_once("navbar.php") ?>
 		<div class="main">
-			<div>
-		        <form method="post" action="/register_handler.php">
-		          <div>Enter Email</div>
-		          <div><input type="text" name="email"/></div>
-		          <div>Enter Password</div>
-		          <div><input type="password" name="pass1"/></div>
-		          <div>Confirm Password</div>
-		          <div><input type="password" name="pass2"/></div>
+			<div class="usr form no">
+		        <form class="no-margin" method="post" action="/register_handler.php">
+		          <div class="center-container">Create User</div>
+		          <br>
+		          <div class="split"><div>Enter Email</div><input type="text" name="email"/></div> 
+		          <div class="split"><div>Enter Password</div><input type="password" name="pass1"/></div>
+		          <div class="split"><div>Confirm Password</div><input type="password" name="pass2"/></div>
+		          <br>
 		          <div class="center-container"><input type="submit"/></div>
 		        </form>
       		</div>

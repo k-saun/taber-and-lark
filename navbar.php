@@ -1,21 +1,23 @@
 
 
-<div class="navbar">
-  <ul>
-	<li>
-  		<div class="burger-bar"></div>
-  		<div class="burger-bar"></div>
-  		<div class="burger-bar"></div>
-	</li>
+<div id="navbar">
+	<div id="nav-left" class="nav-section">
+		<div class="burger">
+		  <div class="bar bar-1"></div>
+		  <div class="bar bar-2"></div>
+		  <div class="bar bar-3"></div>
+		</div>
+	</div>
     
-	<li class="center-container">
-	  <a href="/index.php">
-	    <img src="/images/temp-sprite.png" alt="logo">
-	  </a>	
-	</li>
-    
-	<li>
-		<div id="nav-right">
+    <div id="nav-middle" class="nav-section">
+		<div class="center-container">
+		  <a href="/index.php">
+		    <img src="/images/temp-sprite.png" alt="logo">
+		  </a>	
+		</div>
+	</div>
+
+	<div id="nav-right" class="nav-section">
 			<div class="icon" id="cart-icon"></div>
 			<a href="/profile.php">
 				<div class="icon" id="account-icon"></div>	
@@ -28,7 +30,5 @@
 					echo "<div><a href =\"/profile.php\">{$user['user_email']}</a></div>";
 			  	}	
 			?>
-		</div>
-	</li>
-  </ul>
+	</div>
 </div>

@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  if (isset($_SESSION['logged_in']) &&  $_SESSION['logged_in'] == true) {
+    header("Location: /shop.php");
+    exit;
+  }
+?>
 <html>
   <head>
     <title>T&L</title>

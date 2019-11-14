@@ -7,23 +7,46 @@ body {
   background-color: #E0E0E0;
 }
 
-.navbar {
-  width: 100vw;
-  height: 8%;
-}
-
-.navbar ul {
+.split {
   display: flex;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.navbar li { 
-  list-style-type: none;
-  cursor: pointer;
+.form {
+  background: #ccc;
+  padding: 1% 2% 1% 2%
+}
+
+.usr {
+  width: 30%;
+  position: absolute;
+  top: 42.5vh;
+}
+
+.split div:last-child {
+  margin-left: auto;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 8vh;
+}
+
+.nav-section { 
+  display: flex;
+  align-items: center;
+  height: 100%;
   width: 33%;
-  margin: 2vw 0;
-  font-size: 3vh;
+}
+
+#nav-left {
+}
+
+#nav-middle {
+  justify-content: center
 }
 
 #nav-right {
@@ -76,6 +99,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100vw;
+  min-height: 92vh;
 }
 
 .item-row {
@@ -101,6 +125,10 @@ body {
   width: 100%;
 }
 
+.no-margin{
+  margin: 0;
+}
+
 .item-column img {
   width: 100%;
   margin-top: 2.5%;
@@ -110,6 +138,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
 }
 
 #item-pic {
@@ -124,9 +160,22 @@ body {
   background: url(/images/icon-sprite.png) -65px -32px;
 }
 
-.burger-bar {
-  width: 2.5vw;
-  height: 0.5vh;
-  background-color: #333;
-  margin: .5vh 0 0 1vw;
+.burger {
+  width: 35px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 2.5%
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  background-color:  #17181F;
+  display: inline-block;
 }
