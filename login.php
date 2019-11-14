@@ -1,6 +1,11 @@
 <?php
   session_start();
+  if (isset($_SESSION['logged_in']) &&  $_SESSION['logged_in'] == true) {
+    header("Location: /profile.php");
+    exit;
+  }
 ?>
+
 <html>
   <head>
   	<title>T&L</title>
@@ -20,9 +25,9 @@
       <div>
         <form method="post" action="/login_handler.php">
           <div>Email</div>
-          <div><input type="text" name="user_email"/></div>
+          <div><input type="text" name="email"/></div>
           <div>Password</div>
-          <div><input type="password" name="password"/></div>
+          <div><input type="password" name="pass"/></div>
           <div class="center-container"><input type="submit"/></div>
           <div class="center-container">
             <a href="/register.php">Sign up!</a>

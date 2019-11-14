@@ -26,7 +26,7 @@ class DAO {
   }
 
   public function getUser($email) {
-    $user_email = $this->sanitize($user_email);
+    $user_email = $this->sanitize($email);
 
     try {
       $conn = $this->getConnection();
@@ -57,14 +57,27 @@ class DAO {
     }
   }
 
+  public function getItem($id) {
+  $id = $this->sanitize($id);
+
+  try {
+    $conn = $this->getConnection();
+    $stmt = $conn->prepare("SELECT * FROM items WHERE item_id = :id");
+    $stmt->bindParam(':id', $id);
+    $stmt->execute();
+    $item = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $item;
+
+    } catch (Exception $e) {
+      echo print_r($e,1);
+      exit;
+    }
+  }
+
 function sanitize($data) {
   $data = trim($data);
   $data = htmlspecialchars($data);
   return $data;
-}
-
-public function getItem($id) {
-  
 }
   /*
   public function saveComment ($comment) {

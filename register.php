@@ -34,7 +34,6 @@
 		        	}
 		        	unset($_SESSION['message']);
 		        }
-
 	      	?>
     	</div>
 	</body>
