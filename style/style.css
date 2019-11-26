@@ -20,7 +20,6 @@ body {
 
 .usr {
   width: 30%;
-  position: absolute;
   top: 42.5vh;
 }
 
@@ -61,7 +60,6 @@ body {
 }
 
 #nav-right a {
-  height: 50%;
   font-size: 10px;
 }
 
@@ -77,19 +75,23 @@ body {
   width 10%
 }
 
-#item-image-and-checkout {
+.item-image-and-checkout {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  width: 70%;
   flex-direction: row;
-  margin: 5%
 }
 
-#item-image-and-checkout div {
+.item-image-and-checkout > div{
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#item-image-and-checkout img {
-  width: 50%;
+.item-image-and-checkout img {
+  width: 100%;
   padding: 1.5%;
 }
 

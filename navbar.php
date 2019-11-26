@@ -11,7 +11,7 @@
     
     <div id="nav-middle" class="nav-section">
 		<div class="center-container">
-		  <a href="/index.php">
+		  <a href="/shop.php">
 		    <img src="/images/temp-sprite.png" alt="logo">
 		  </a>	
 		</div>

@@ -24,7 +24,7 @@
 
         $i = 0;
         foreach($items as $item){
-          $item_html[$i] = "<a href='product.php?item_id={$item['item_url']}''>" .
+          $item_html[$i] = "<a href='product.php?item_id={$item['item_id']}''>" .
                   "<img src=\"{$item['item_img']}\">" .
                 "</a>";
           $i++;

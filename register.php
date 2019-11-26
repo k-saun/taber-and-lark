@@ -22,19 +22,18 @@
 		          <div class="split"><div>Enter Password</div><input type="password" name="pass1"/></div>
 		          <div class="split"><div>Confirm Password</div><input type="password" name="pass2"/></div>
 		          <br>
+		          <?php   
+			        if (isset($_SESSION['message'])) {
+			        	$msgs = $_SESSION['message'];
+			        	foreach($msgs as $msg){
+			        		echo "<div>{$msg}</div>";
+			        	}
+			        	unset($_SESSION['message']);
+			        }
+		      	  ?>
 		          <div class="center-container"><input type="submit"/></div>
 		        </form>
       		</div>
-      		
-      		<?php   
-		        if (isset($_SESSION['message'])) {
-		        	$msgs = $_SESSION['message'];
-		        	foreach($msgs as $msg){
-		        		echo "<div>{$msg}</div>";
-		        	}
-		        	unset($_SESSION['message']);
-		        }
-	      	?>
     	</div>
 	</body>
 </html>

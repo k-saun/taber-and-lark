@@ -37,7 +37,7 @@ $user = $dao->getUser($email);
 	
 // Verify user password and set $_SESSION
 $valid = false;
-if ($pass == $user['user_password']) {
+if(password_verify($pass, $user['user_password'])) {
 	$_SESSION['email'] = $user['email'];
 	$valid = true;
 } else 
