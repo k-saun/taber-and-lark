@@ -9,6 +9,8 @@
 <html>
   <head>
   	<title>T&L</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="login.js"></script>
   	<link rel="stylesheet" type="text/css" href="/style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
@@ -23,27 +25,28 @@
 		<div class="main">
 
       <div class="usr form">
-        <form class="no-margin" method="post" action="/login_handler.php">
-          <div class="split"><div>Email</div> <input type="text" name="email"/></div>
-          <div class="split"><div>Password</div><input type="password" name="pass"/></div>
+        <form id="login-form" class="no-margin" method="post" action="/login_handler.php">
+          <div class="split"><div>Email</div> <input type="text" name="email" id="form_email"/></div>
+          <div class="split"><div>Password</div><input type="password" name="pass" id="form_pass"/></div>
           <div class="split">
             <div><a href="/register.php">Sign up!</a></div>
-            <input type="submit"/>
+            <input id="submit" type="submit" value="Sign in"/>
           </div>
-          
+          <div class="center-container no-margin"><ul class="no-margin badMessage" id="errors"><li id="email_error">Test</li></ul></div>
+
+          <?php 
+            if (isset($_SESSION['message'])) {
+              $msgs = $_SESSION['message'];
+              echo "<div class=\"center-container no-margin\"><ul class=\"no-margin badMessage\">";
+              foreach($msgs as $msg){
+                echo "<li>{$msg}</li>";
+              }
+              echo"</ul></div>";
+              unset($_SESSION['message']);
+            }
+          ?>
         </form>
       </div>
-
-      <?php   
-        if (isset($_SESSION['message'])) {
-          $msgs = $_SESSION['message'];
-          foreach($msgs as $msg){
-            echo "<div>{$msg}</div>";
-          }
-          unset($_SESSION['message']);
-        }
-      ?>
-
     </div>
 	</body>
 </html>

@@ -36,7 +36,7 @@ if(empty($_POST['pass1']) or empty($_POST['pass2'])){
 		if($pass == 'password' || $pass == "Password") {
 			array_push($msgs, "Seriously? \"Password\"?");
 		} else {
-			if (strlen($pass) <= '6') {
+			if (strlen($pass) < '6') {
 			    array_push($msgs, "Your password must contain at least 6 characters!");
 			}
 			if(!preg_match("#[0-9]+#",$pass)) {

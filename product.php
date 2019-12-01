@@ -22,14 +22,15 @@
 		  <?php include_once("navbar.php") ?>
   		<div class="main">
         <div class="item-image-and-checkout">
-          <div class="center-container">
           <?php
-            echo "<img src=\"{$item['item_img']}\"> 
+          $price = number_format($item['item_price'], 2,'.', ',');
+            echo "<div class=\"center-container\">
+                    <img src=\"{$item['item_img']}\"> 
                   </div> 
-                      <div >
-                        <p>{$item['item_name']}</p>
-                        <p>{$item['item_price']}</p>
-                      </div>"
+                  <div>
+                    <p>{$item['item_name']}</p>
+                    <p>\${$price}</p>
+                  </div>";
           ?>
           </div>
         </div>

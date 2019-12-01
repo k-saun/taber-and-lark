@@ -13,9 +13,34 @@ body {
   justify-content: space-between;
 }
 
+.split > div {
+  width: 50%;
+}
+
+.badMessage > li {
+  color: red;
+}
+
+input {
+  border: none;
+  cursor: pointer;
+}
+
+#submit {
+  width: 25%;
+}
+
+.split > input {
+  width: 50%;
+}
+
 .form {
   background: #ccc;
   padding: 1% 2% 1% 2%
+}
+
+form > div{
+  margin: 2.5% 0% 2.5% 0%;
 }
 
 .usr {
@@ -86,7 +111,6 @@ body {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
