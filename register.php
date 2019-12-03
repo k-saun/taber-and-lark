@@ -19,9 +19,9 @@
 			<div class="usr form no">
 		        <form class="no-margin" method="post" action="/register_handler.php">
 		          <div class="center-container">Create User</div>
-		          <div class="split"><div>Enter Email</div><input type="text" name="email" id="form_email"/></div> 
-		          <div class="split"><div>Enter Password</div><input type="password" name="pass1" id="form_pass1"/></div>
-		          <div class="split"><div>Confirm Password</div><input type="password" name="pass2" id="form_pass2"/></div>
+		          <div class="split"><label for="form_email">Enter Email</label><input type="text" name="email" id="form_email"/></div> 
+		          <div class="split"><label for="form_pass1">Enter Password</label><input type="password" name="pass1" id="form_pass1"/></div>
+		          <div class="split"><label for="form_pass2">Confirm Password</label><input type="password" name="pass2" id="form_pass2"/></div>
 		          	<ul class="no-margin badMessage" id="errors">
 		          		<li id="email_error"></li>
 		          		<li id="pass_error_1"></li>

@@ -26,8 +26,8 @@
 
       <div class="usr form">
         <form id="login-form" class="no-margin" method="post" action="/login_handler.php">
-          <div class="split"><div>Email</div> <input type="text" name="email" id="form_email"/></div>
-          <div class="split"><div>Password</div><input type="password" name="pass" id="form_pass"/></div>
+          <div class="split"><label for="form_email">Email</label> <input type="text" name="email" id="form_email"/></div>
+          <div class="split"><label for="form_pass">Password</label><input type="password" name="pass" id="form_pass"/></div>
           <div class="split">
             <div><a href="/register.php">Sign up!</a></div>
             <input id="submit" type="submit" value="Sign in"/>

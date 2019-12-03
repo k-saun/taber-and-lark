@@ -40,24 +40,27 @@ $(function() {
 
 	function validate_pass(pass) {
 		var success = true;
-		if(pass.length < 6) {
-			pass_errors.push("Your password must contain at least 6 characters.");
-			success = false;
-		}
-		var regex = /[0-9]/;
-		if(!regex.test(pass)){
-			pass_errors.push("Your password must contain at least 1 Number.");
-			success = false;
-		}
-		var regex = /[a-z]/;
-		if(!regex.test(pass)){
-			pass_errors.push("Your password must contain at least 1 lowercase letter.");
-			success = false;
-		}
-		var regex = /[A-Z]/;
-		if(!regex.test(pass)){
-			pass_errors.push("Your password must contain at least 1 capital letter.");
-			success = false;
+		if(pass.length > 0){ 
+			if(pass.length < 6) {
+				pass_errors.push("Your password must contain at least 6 characters.");
+				success = false;
+				alert(pass.length);
+			}
+			var regex = /[0-9]/;
+			if(!regex.test(pass)){
+				pass_errors.push("Your password must contain at least 1 number.");
+				success = false;
+			}
+			var regex = /[a-z]/;
+			if(!regex.test(pass)){
+				pass_errors.push("Your password must contain at least 1 lowercase letter.");
+				success = false;
+			}
+			var regex = /[A-Z]/;
+			if(!regex.test(pass)){
+				pass_errors.push("Your password must contain at least 1 capital letter.");
+				success = false;
+			}
 		}
 		return success;
 	}
